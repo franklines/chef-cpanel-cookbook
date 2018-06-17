@@ -1,20 +1,14 @@
 name 'cpanel'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
-license 'All Rights Reserved'
-description 'Installs/Configures cpanel'
-long_description 'Installs/Configures cpanel'
-version '0.1.0'
+maintainer 'Frank'
+maintainer_email 'escobarbfranklin@gmail.com'
+license 'The MIT License'
+description 'Installs the latest cPanel version.'
+long_description 'This Chef cookbook downloads and installs the latest cPanel software on the bootstrapped node.'
+version '0.1.1'
+%w( amazon centos redhat cloudlinux ).each do |os|
+  supports os
+end
 chef_version '>= 12.14' if respond_to?(:chef_version)
-
-# The `issues_url` points to the location where issues for this cookbook are
-# tracked.  A `View Issues` link will be displayed on this cookbook's page when
-# uploaded to a Supermarket.
-#
-# issues_url 'https://github.com/<insert_org_here>/cpanel/issues'
-
-# The `source_url` points to the development repository for this cookbook.  A
-# `View Source` link will be displayed on this cookbook's page when uploaded to
-# a Supermarket.
-#
-# source_url 'https://github.com/<insert_org_here>/cpanel'
+license 'MIT'
+issues_url 'https://github.com/franklines/chef-cpanel-cookbook/issues'
+source_url 'https://github.com/franklines/chef-cpanel-cookbook'
