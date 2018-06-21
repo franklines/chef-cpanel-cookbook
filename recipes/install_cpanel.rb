@@ -1,6 +1,5 @@
-#
 # Cookbook:: cpanel
-# Recipe:: cpanel
+# Recipe:: install_cpanel
 
 # Download cPanel installation script.
 

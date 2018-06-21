@@ -1,0 +1,8 @@
+#### NOTICE ####
+# File generated and managed by Chef.
+# Do not manually edit this file! Update the appropriate chef attributes to make changes.
+# To apply the changes run the `sudo chef-client` command on the bootstrapped node.
+
+<% node['cpanel'].sort.each do |k,v| %>
+<%= "#{k}=#{v}" %>
+<% end %>
